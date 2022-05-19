@@ -1,0 +1,5 @@
+-   id: python-hkgrp
+    name: (HOOK GROUP) Python
+    language: script
+    entry: ./run_hook_group
+    verbose: true
