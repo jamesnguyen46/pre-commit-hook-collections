@@ -1,13 +1,10 @@
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.1.0
+  - repo: local
     hooks:
-      - id: check-json
-        exclude: .vscode/
-      - id: check-yaml
-      - id: end-of-file-fixer
-        types: [python]
-      - id: trailing-whitespace
+      - id: validate-python-file-name
+        name: validate-python-file-name
+        entry: python python/scripts/validate_python_file_name.py
+        language: python
   - repo: https://github.com/psf/black
     rev: 22.3.0
     hooks:
@@ -19,9 +16,3 @@ repos:
         args:
         - --fail-under=10
         - --rcfile=python/pylintrc
-  - repo: local
-    hooks:
-      - id: validate-python-file-name
-        name: validate-python-file-name
-        entry: python python/scripts/validate_python_file_name.py
-        language: python

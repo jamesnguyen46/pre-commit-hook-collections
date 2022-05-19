@@ -1,5 +1,12 @@
--   id: python-hkgrp
-    name: (HOOK GROUP) Python
-    language: script
-    entry: ./run_hook_group
-    verbose: true
+- id: common-hkgrp
+  name: COMMON GROUP
+  language: python
+  entry: python -c 'import run_hook_group; run_hook_group.hook_group_selector("common")'
+  verbose: true
+  require_serial: true
+- id: python-hkgrp
+  name: PYTHON GROUP
+  language: python
+  entry: python -c 'import run_hook_group; run_hook_group.hook_group_selector("python")'
+  verbose: true
+  require_serial: true
