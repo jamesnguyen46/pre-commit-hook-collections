@@ -1,15 +1,21 @@
 repos:
-  - repo: local
-    hooks:
-    - id: common-hkgrp
-      name: COMMON GROUP
-      language: script
-      entry: ./run_hook_config common
-      verbose: true
-      require_serial: true
-    - id: python-hkgrp
-      name: PYTHON GROUP
-      language: script
-      entry: ./run_hook_config python
-      verbose: true
-      require_serial: true
+- repo: local
+  hooks:
+  - id: common-hook
+    name: COMMON GROUP
+    language: script
+    entry: ./run_hook_config common
+    verbose: true
+    require_serial: true
+  - id: yaml-hook
+    name: YAML GROUP
+    language: script
+    entry: ./run_hook_config yaml
+    verbose: true
+    require_serial: true
+  - id: python-hook
+    name: PYTHON GROUP
+    language: script
+    entry: ./run_hook_config python
+    verbose: true
+    require_serial: true
