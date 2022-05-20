@@ -34,6 +34,17 @@ Includes the below steps:
 - `yaml - check syntax`
 - `yaml - auto format`
 
+### `markdown-hook`
+
+- `markdown - check lint` : using [markdownlint](https://github.com/markdownlint/markdownlint) to check markdown files according ro some [rules](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md). Default has disabled some rules as
+
+  ```
+  MD002 - First header should be a top level header
+  MD013 - Line length
+  MD024 - Multiple headers with the same content
+  MD033 - Inline HTML
+  ```
+
 ### `python-hook`
 
 - `python - check file name` : check whether python file path is valid or not. File path is valid when only includes lower characters and not contains `space` character and `hyphen` symbol.

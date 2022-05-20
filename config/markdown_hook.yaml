@@ -1,0 +1,8 @@
+repos:
+- repo: https://github.com/markdownlint/markdownlint
+  rev: v0.11.0
+  hooks:
+  - id: markdownlint
+    name: markdown - check lint
+    args:
+    - -r ~MD002,~MD013,~MD033,~MD024
