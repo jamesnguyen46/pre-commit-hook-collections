@@ -37,7 +37,7 @@ Includes the below steps:
 ### `markdown-hook`
 
 - `markdown - check lint` : using [markdownlint](https://github.com/markdownlint/markdownlint) to check markdown files according ro some [rules](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md). Default has disabled some rules as
-  
+
   ```
   MD002 - First header should be a top level header
   MD013 - Line length
