@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/jamesnguyen46/pre-commit-hook
-  rev: v0.0.1
+  rev: v0.1.0
   hooks:
   - id: validate-python-file-name
     name: python - check file name
