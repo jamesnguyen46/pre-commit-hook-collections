@@ -16,6 +16,12 @@
   entry: ./run_hook_config yaml
   verbose: true
   require_serial: true
+- id: markdown-hook
+  name: MARKDOWN GROUP
+  language: script
+  entry: ./run_hook_config markdown
+  verbose: true
+  require_serial: true
 - id: python-hook
   name: PYTHON GROUP
   language: script
