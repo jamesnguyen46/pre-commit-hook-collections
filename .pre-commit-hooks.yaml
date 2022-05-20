@@ -1,30 +1,30 @@
-- id: common-hook
+- id: common-group
   name: COMMON GROUP
   language: script
-  entry: ./run_hook_config common
+  entry: ./run_hook_config common_grp
   verbose: true
   require_serial: true
-- id: json-hook
+- id: json-group
   name: JSON GROUP
   language: script
-  entry: ./run_hook_config json
+  entry: ./run_hook_config json_grp
   verbose: true
   require_serial: true
-- id: yaml-hook
+- id: yaml-group
   name: YAML GROUP
   language: script
-  entry: ./run_hook_config yaml
+  entry: ./run_hook_config yaml_grp
   verbose: true
   require_serial: true
-- id: markdown-hook
+- id: markdown-group
   name: MARKDOWN GROUP
   language: script
-  entry: ./run_hook_config markdown
+  entry: ./run_hook_config markdown_grp
   verbose: true
   require_serial: true
-- id: python-hook
+- id: python-group
   name: PYTHON GROUP
   language: script
-  entry: ./run_hook_config python
+  entry: ./run_hook_config python_grp
   verbose: true
   require_serial: true

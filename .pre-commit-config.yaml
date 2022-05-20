@@ -1,21 +1,21 @@
 repos:
 - repo: local
   hooks:
-  - id: common-hook
+  - id: common-group
     name: COMMON GROUP
     language: script
-    entry: ./run_hook_config common
+    entry: ./run_hook_config common_grp
     verbose: true
     require_serial: true
-  - id: yaml-hook
+  - id: yaml-group
     name: YAML GROUP
     language: script
-    entry: ./run_hook_config yaml
+    entry: ./run_hook_config yaml_grp
     verbose: true
     require_serial: true
-  - id: python-hook
+  - id: python-group
     name: PYTHON GROUP
     language: script
-    entry: ./run_hook_config python
+    entry: ./run_hook_config python_grp
     verbose: true
     require_serial: true

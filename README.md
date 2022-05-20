@@ -1,21 +1,25 @@
-# Pre-commit hook config
+# pre-commit hook group
 
-The objective of this repository is to manage pre-commit hook version centrally. This repository is implemented from [example](https://github.com/pre-commit/pre-commit/issues/731#issuecomment-376945745).
+[![License](https://img.shields.io/badge/license-Apache-orange?label=License&logo=apache&logoColor=white)](https://github.com/jamesnguyen46/pre-commit-hook-group/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/jamesnguyen46/pre-commit-hook-group?label=Last%20Commit&logo=github&logoColor=white&color=yellow)](https://github.com/jamesnguyen46/pre-commit-hook-group/commits/main)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/jamesnguyen46/pre-commit-hook-group/Pre-commit?label=GitHub%20Workflow&logo=githubactions&logoColor=white)
+
+The objective of this repository is to manage pre-commit hook version centrally. It is implemented from [example](https://github.com/pre-commit/pre-commit/issues/731#issuecomment-376945745).
 
 ## Usage
 
 ```yaml
 repos:
-  - repo: https://github.com/jamesnguyen46/pre-commit-hook-config
-    rev: v0.1.0
+  - repo: https://github.com/jamesnguyen46/pre-commit-hook-group
+    rev: {lastest_version}
     hooks:
-      - id: common-hook
-      - id: python-hook
+      - id: common-group
+      - id: python-group
       - ...
 ```
-## Config
+## Groups
 
-### `common-hook`
+### `common-group`
 
 Includes the below steps:
 
@@ -24,17 +28,17 @@ Includes the below steps:
 - `content - detect private key` : checks for the existence of private keys.
 - `content - trim space` : trims trailing whitespace.
 
-### `json-hook`
+### `json-group`
 
 - `json - check syntax`
 - `json - auto format`
 
-### `yaml-hook`
+### `yaml-group`
 
 - `yaml - check syntax`
 - `yaml - auto format`
 
-### `markdown-hook`
+### `markdown-group`
 
 - `markdown - check lint` : using [markdownlint](https://github.com/markdownlint/markdownlint) to check markdown files according ro some [rules](https://github.com/markdownlint/markdownlint/blob/master/docs/RULES.md). Default has disabled some rules as
 
@@ -45,7 +49,7 @@ Includes the below steps:
   MD033 - Inline HTML
   ```
 
-### `python-hook`
+### `python-group`
 
 - `python - check file name` : check whether python file path is valid or not. File path is valid when only includes lower characters and not contains `space` character and `hyphen` symbol.
 - `python - format code` : using [black](https://github.com/psf/black) to format code.

@@ -5,11 +5,11 @@ import sys
 HERE = os.path.dirname(os.path.realpath(__file__))
 
 CONFIG_MAPPING = {
-    "common": "config/common_hook.yaml",
-    "json": "config/json_hook.yaml",
-    "yaml": "config/yaml_hook.yaml",
-    "markdown": "config/markdown_hook.yaml",
-    "python": "config/python_hook.yaml",
+    "common_grp": "config/common_hook.yaml",
+    "json_grp": "config/json_hook.yaml",
+    "yaml_grp": "config/yaml_hook.yaml",
+    "markdown_grp": "config/markdown_hook.yaml",
+    "python_grp": "config/python_hook.yaml",
 }
 
 
