@@ -22,20 +22,6 @@ Includes the below steps:
 - `file - check size` : only allow to add file size < 1MB
 - `file - fix newline` : makes sure files end in a newline and only a newline.
 - `content - detect private key` : checks for the existence of private keys.
-
-  ```
-  BEGIN RSA PRIVATE KEY
-  BEGIN DSA PRIVATE KEY
-  BEGIN EC PRIVATE KEY
-  BEGIN OPENSSH PRIVATE KEY
-  BEGIN PRIVATE KEY
-  PuTTY-User-Key-File-2
-  BEGIN SSH2 ENCRYPTED PRIVATE KEY
-  BEGIN PGP PRIVATE KEY BLOCK
-  BEGIN ENCRYPTED PRIVATE KEY
-  BEGIN OpenVPN Static key V1
-  ```
-
 - `content - trim space` : trims trailing whitespace.
 
 ### `json-hook`
