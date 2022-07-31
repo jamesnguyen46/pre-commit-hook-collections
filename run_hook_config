@@ -10,6 +10,7 @@ CONFIG_MAPPING = {
     "yaml_grp": "config/yaml_hook.yaml",
     "markdown_grp": "config/markdown_hook.yaml",
     "python_grp": "config/python_hook.yaml",
+    "golang_grp": "config/golang_hook.yaml",
 }
 
 

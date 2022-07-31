@@ -28,3 +28,9 @@
   entry: ./run_hook_config python_grp
   verbose: true
   require_serial: true
+- id: golang-group
+  name: GOLANG GROUP
+  language: script
+  entry: ./run_hook_config golang_grp
+  verbose: true
+  require_serial: true
