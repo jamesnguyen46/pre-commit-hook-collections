@@ -17,6 +17,7 @@ repos:
       - id: python-group
       - ...
 ```
+
 ## Groups
 
 ### `common-group`
@@ -76,3 +77,7 @@ Default : set max line length 120 and disable some rules such as
   # duplicate-code
   R0801
   ```
+
+### `golang-group`
+
+- `golang - check lint` : using [golangci-lint](https://github.com/golangci/golangci-lint)
